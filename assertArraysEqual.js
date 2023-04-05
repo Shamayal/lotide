@@ -11,7 +11,8 @@ const eqArrays = function(firstArray, secondArray) {
   } return output;
 };
 
-const assertArraysEqual = function(actual) {
+const assertArraysEqual = function(firstArray, secondArray) {
+  let actual = eqArrays(firstArray, secondArray);
   if (actual === true) {
     console.log("equal");
   } else {
@@ -20,11 +21,11 @@ const assertArraysEqual = function(actual) {
 };
 // TEST CODE
 
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3])); // equal
-assertArraysEqual(eqArrays([1, 2, 3], [3, 2, 1])); // not equal
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // equal
+assertArraysEqual([1, 2, 3], [3, 2, 1]); // not equal
 
-assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // equal
-assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3])); // not equal
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // equal
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // not equal
 
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3])); // equal
-assertArraysEqual(eqArrays([1, 2, 3], [1, 5, 3])); // not equal
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // equal
+assertArraysEqual([1, 2, 3], [1, 5, 3]); // not equal
