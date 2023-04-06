@@ -1,0 +1,35 @@
+// FUNCTION IMPLEMENTATION
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`🥳🎉🥳 Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`😰❌😰 Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
+
+const countLetters = function(sentence) {
+  const results = {};
+  sentence = sentence.toLowerCase();
+  for (const letter of sentence) {
+    if (letter !== " ") {
+      if (results[letter]) {
+        results[letter] += 1;
+      } else {
+        results[letter] = 1;
+      }
+    }
+  } return results;
+};
+
+let resultTest1 = countLetters("lighthouse in the house");
+
+assertEqual(resultTest1["l"], 1);
+assertEqual(resultTest1["i"], 2);
+assertEqual(resultTest1["g"], 1);
+assertEqual(resultTest1["h"], 4);
+assertEqual(resultTest1["t"], 2);
+assertEqual(resultTest1["o"], 2);
+assertEqual(resultTest1["u"], 2);
+assertEqual(resultTest1["s"], 2);
+assertEqual(resultTest1["e"], 3);
+assertEqual(resultTest1["n"], 1);
