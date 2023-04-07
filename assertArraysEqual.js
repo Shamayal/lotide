@@ -17,11 +17,12 @@ const eqArrays = function(firstArray, secondArray) {
 const assertArraysEqual = function(firstArray, secondArray) {
   let actual = eqArrays(firstArray, secondArray);
   if (actual === true) {
-    console.log("equal");
+    console.log(`🥳🎉🥳 Assertion Passed: ${firstArray} === ${secondArray}`);
   } else {
-    console.log("not equal");
+    console.log(`😢❌😢 Assertion Failed: ${firstArray} !== ${secondArray}`);
   }
 };
+
 // TEST CODE
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]); // equal
