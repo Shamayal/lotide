@@ -54,6 +54,7 @@ const assertObjectsEqual = function(object1, object2) {
   }
 };
 
+
 assertObjectsEqual({ color: "red", size: "medium" }, { size: "medium", color: "red" }); // equal
 assertObjectsEqual({ size: "medium", color: "red" }, { size: "medium", color: "red", sleeveLength: "long" }); // not equal
 
