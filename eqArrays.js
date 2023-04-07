@@ -17,7 +17,10 @@ const eqArrays = function(firstArray, secondArray) {
         output = output && false;
       }
     }
-  } return output;
+  } else {
+    output = false;
+  }
+  return output;
 };
 // TEST CODE
 

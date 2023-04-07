@@ -8,7 +8,10 @@ const eqArrays = function(firstArray, secondArray) {
         output = output && false;
       }
     }
-  } return output;
+  } else {
+    output = false;
+  }
+  return output;
 };
 
 const assertArraysEqual = function(firstArray, secondArray) {
@@ -29,3 +32,6 @@ assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // not equal
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]); // equal
 assertArraysEqual([1, 2, 3], [1, 5, 3]); // not equal
+
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // equal
+assertArraysEqual([1, 2, 3], [1]); // not equal
