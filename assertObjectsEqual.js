@@ -14,14 +14,6 @@ const eqArrays = function(firstArray, secondArray) {
   return output;
 };
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🥳🎉🥳 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`😢❌😢 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const eqObjects = function(object1, object2) {
   let array1 = [];
   let array2 = [];
@@ -52,7 +44,6 @@ const eqObjects = function(object1, object2) {
   return result;
 };
 
-// FUNCTION IMPLEMENTATION
 const assertObjectsEqual = function(object1, object2) {
   let actual = eqObjects(object1, object2);
   const inspect = require('util').inspect;
