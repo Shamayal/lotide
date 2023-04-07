@@ -11,7 +11,7 @@ const countLetters = function(sentence) {
   const results = {};
   sentence = sentence.toLowerCase();
   for (const letter of sentence) {
-    if (letter !== " ") {
+    if (letter !== " " && letter !== "," && letter !== "!" && letter !== ".") {
       if (results[letter]) {
         results[letter] += 1;
       } else {
@@ -22,6 +22,9 @@ const countLetters = function(sentence) {
 };
 
 let resultTest1 = countLetters("lighthouse in the house");
+console.log(countLetters("lighthouse, in the house!"));
+console.log(countLetters("lighthouse in the house"));
+
 
 assertEqual(resultTest1["l"], 1);
 assertEqual(resultTest1["i"], 2);
