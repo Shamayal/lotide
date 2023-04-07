@@ -37,29 +37,17 @@ const letterPositions = function(sentence) {
   } return results;
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // equal
-assertArraysEqual([1, 2, 3], [1]); // not equal
-
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // equal
-assertArraysEqual([3, 5, 158], [1, 5, 3]); // not equal
-
-/*
-console.log(letterPositions("Hello"));
-console.log(letterPositions("lighthouse in the house"));
-
 let test = "hello";
-assertArraysEqual(letterPositions(test).e, [1]);
-assertArraysEqual(letterPositions(test).l, [2, 3]);
+assertArraysEqual(letterPositions(test).e, [1]); // equal
+assertArraysEqual(letterPositions(test).l, [2, 3]); // equal
 
-console.log(letterPositions("lighthouse in the house").h);
-assertArraysEqual(letterPositions("lighthouse in the house").h, [3, 5, 15, 18]);
-assertArraysEqual(letterPositions("lighthouse in the house").e, [3, 5, 158]);
-assertArraysEqual(letterPositions("lighthouse in the house").n, [12]);
-*/
+assertArraysEqual(letterPositions("lighthouse in the house").h, [3, 5, 15, 18]); // equal
+assertArraysEqual(letterPositions("lighthouse in the house").e, [3, 8, 158]); // not equal
+assertArraysEqual(letterPositions("lighthouse in the house").n, [12]); // equal
+
 /*
-
-let answer = 
-{ 
+let answer =
+{
   l: [0],
   i: [1, 11],
   g: [2],
