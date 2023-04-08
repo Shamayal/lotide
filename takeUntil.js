@@ -26,7 +26,7 @@ const assertArraysEqual = function(firstArray, secondArray) {
 const takeUntil = function(array, callback) {
   array.forEach((item, i) => {
     if (callback(item)) {
-      array.splice(i)
+      array.splice(i);
     }
   });
   return array;
