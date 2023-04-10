@@ -8,9 +8,11 @@ const assertEqual = function(actual, expected) {
 };
 
 // TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("Hello", "Hello");
-assertEqual("Hello", "hello");
-assertEqual(24, 24);
-assertEqual(24, 99);
+assertEqual("Lighthouse Labs", "Bootcamp"); // not equal
+assertEqual(1, 1); // equal
+assertEqual("Hello", "Hello"); // equal
+assertEqual("Hello", "hello"); // not equal
+assertEqual(24, 24); // equal
+assertEqual(24, 99); // not equal
+
+module.exports = assertEqual;
