@@ -42,3 +42,4 @@ The following functions are currently implemented:
 - `tail(arrayElements)`: retrieves every element except the first element of an array
 - `takeUntil(array, callback)`: returns a slice of the array with elements taken from the beginning until the callback returns a truthy value
 - `without(sourceArray, itemsToRemove)`: removes specified items from an array and returns a new array without those items
+- `flatten(array)`: given an array with other arrays inside, it can flatten it into a single-level array
