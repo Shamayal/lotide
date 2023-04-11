@@ -1,20 +1,25 @@
-const assertEqual = require('../assertEqual');
-const tail = require('../tail');
+const assert = require('chai').assert;
+const tail   = require('../tail');
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+describe("#tail", () => {
+  it("returns an empty array for []", () => {
+    assert.deepEqual(tail([]), []);
+  });
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs"
+  it("returns an empty array for [123]", () => {
+    assert.deepEqual(tail([123]), []); 
+  });
 
-const oneElement = tail([1234]);
-assertEqual(oneElement.length, 0); // should be empty
-assertEqual(oneElement[0], "hi");
+  it("returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ['Lighthouse', 'Labs']);
+  });
 
-const empty = tail([]);
-assertEqual(empty.length, 0); // should be empty
-assertEqual(empty[0], "hi");
+  it("returns ['Lemon Tart', {Pie: ['apple', 'blueberry'], numPies: 2}] for ['Croissants', 'Lemon Tart', {Pie: ['apple', 'blueberry'], numPies: 2}]", () => {
+    assert.deepEqual(tail(["Croissants", "Lemon Tart", {Pie: ["apple", "blueberry"], numPies: 2}]), ["Lemon Tart", {Pie: ["apple", "blueberry"], numPies: 2}]); 
+  });
+
+  it("returns [3, 4] for [[1, 2], 3, 4]", () => {
+    assert.deepEqual(tail([[1, 2], 3, 4]), [3, 4]); 
+  });
+
+});
