@@ -1,7 +1,8 @@
 const assert = require('chai').assert;
-const without   = require('../without');
+const without = require('../without');
 
 describe("#without", () => {
+
   it("returns [2, 3] for [1, 2, 3] with [1] removed", () => {
     assert.deepEqual(without([1, 2, 3], [1]), [2, 3]);
   });

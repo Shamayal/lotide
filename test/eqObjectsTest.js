@@ -12,7 +12,7 @@ describe("#eqObjects", () => {
   });
 
   it("returns false for shirtObject and longSleeveShirtObject", () => {
-    assert.deepEqual(eqObjects(shirtObject, longSleeveShirtObject), false); 
+    assert.deepEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
   });
 
   const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
