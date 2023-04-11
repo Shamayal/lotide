@@ -59,3 +59,5 @@ assertArraysEqual(results2, ["a", "v", "c", "c", "l"]);
 assertArraysEqual(results3, ["a", "v", "c", "c", "l"]);
 assertArraysEqual(results4, ["a", "v", "c", "c", "l"]);
 assertArraysEqual(results5, ["a", "v", "c", "c", "l"]);
+
+module.exports = map;

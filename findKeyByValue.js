@@ -35,3 +35,5 @@ assertEqual(findKeyByValue(bestDessertByMonth, "pumpkin pie"), "October");
 assertEqual(findKeyByValue(bestDessertByMonth, "cinnamon rolls"), undefined);
 assertEqual(findKeyByValue(bestDessertByMonth, "lemon tart"), "May");
 assertEqual(findKeyByValue(bestDessertByMonth, "ice-cream"), "July");
+
+module.exports = findKeyByValue;

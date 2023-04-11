@@ -76,3 +76,5 @@ const cake = { flavours: ["vanilla", "chocolate", "red velvet"], buttercream: ["
 const anotherCake = { flavours: ["vanilla", "chocolate", "red velvet"], buttercream: ["creamcheese", "strawberry"]};
 
 assertEqual(eqObjects(cake  , anotherCake), false);
+
+module.exports = eqObjects;

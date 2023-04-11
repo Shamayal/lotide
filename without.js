@@ -41,3 +41,5 @@ assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // => ["1"
 assertArraysEqual(without([1, 2, 3], [1, 3]),[2]); // => [2, 3]
 assertArraysEqual(without(["hi", "hola", "salut"], [""]),["hi", "hola", "salut"]); // => ["hi", "hola", "salut"]
 assertArraysEqual(without(["hi", "hola", "salut"], ["hey", "hola", "Salut"]), ["hi", "salut"]); // => ["hi", "salut"]
+
+module.exports = without;

@@ -66,3 +66,5 @@ assertObjectsEqual({ summer: ["ice-cream", "sorbet"], autumn: ["pumpkin pie", "a
 assertObjectsEqual({ flavours: ["vanilla", "chocolate", "red velvet"], buttercream: ["cream cheese", "strawberry"]}, { flavours: ["vanilla", "chocolate", "red velvet"], buttercream: ["creamcheese", "strawberry"]}); // not equal
 assertObjectsEqual({ flavours: ["vanilla", "chocolate", "red velvet"], buttercream: ["cream cheese", "strawberry"]}, { flavours: ["vanilla", "chocolate", "red velvet"], buttercream: ["cream cheese", "strawberry"]}); // equal
 assertObjectsEqual({ flavours: ["chocolate", "vanilla", "red velvet"], buttercream: ["cream cheese", "strawberry"]}, { flavours: ["vanilla", "chocolate", "red velvet"], buttercream: ["cream cheese", "strawberry"]}); // not equal
+
+module.exports = assertObjectsEqual;
