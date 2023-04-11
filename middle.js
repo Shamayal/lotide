@@ -1,4 +1,3 @@
-// ACTUAL FUNCTION
 const middle = function(arrayElements) {
   let midElement = [];
   if (arrayElements.length >= 0 & arrayElements.length <= 2) {

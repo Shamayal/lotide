@@ -1,6 +1,5 @@
 const assertEqual = require('./assertEqual');
 
-// FUNCTION IMPLEMENTATION
 const eqArrays = function(firstArray, secondArray) {
   let output = true;
   if (firstArray.length === secondArray.length) {

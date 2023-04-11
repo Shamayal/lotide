@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@shamayal/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A clone of the Lodash library for practice with building small functions",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Shamayal/lotide.git"
   },
-  "author": "",
+  "author": "Shamayal Syed <shamayalsyed9@gmail.com> (https://shamayal.me/)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Shamayal/lotide/issues"
